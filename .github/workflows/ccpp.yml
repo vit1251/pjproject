@@ -1,0 +1,28 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches:
+      - 2.10+meson
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup Python 3
+      run: sudo apt-get install -q -y python3 python3-pip
+    - name: Setup Python invoke module
+      run: sudo python3 -m pip install -U invoke
+    - name: Setup Python meson module
+      run: sudo python3 -m pip install -U meson
+    - name: Install ninja
+      run: sudo apt-get install -q -y ninja-build
+    - name: Compile source code
+      run: inv build
+    - name: Testing
+      run: echo "TODO"
+    - name: Make Debian pacakge 
+      run: echo "TODO"
