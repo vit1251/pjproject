@@ -23,6 +23,8 @@ jobs:
       run: sudo python3 -m pip install -U meson
     - name: Install ninja
       run: sudo apt-get install -q -y ninja-build
+    - name: Setup PJPROJECT source code dependency
+      run: sudo apt-get install -q -y uuid-dev
     - name: Compile source code
       run: inv build
     - name: Testing
