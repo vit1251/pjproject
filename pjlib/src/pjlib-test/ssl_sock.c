@@ -1510,9 +1510,30 @@ int ssl_sock_test(void)
     if (ret != 0)
 	return ret;
 
-    PJ_LOG(3,("", "..echo test w/ incompatible proto"));
+    PJ_LOG(3,("", "..echo test w/ compatible proto: server TLSv1.2 vs client TLSv1.2"));
+    ret = echo_test(PJ_SSL_SOCK_PROTO_TLS1_2, PJ_SSL_SOCK_PROTO_TLS1_2, 
+		    -1, -1,
+		    PJ_FALSE, PJ_FALSE);
+    if (ret != 0)
+	return ret;
+
+    PJ_LOG(3,("", "..echo test w/ compatible proto: server TLSv1.2+1.3 vs client TLSv1.3"));
+    ret = echo_test(PJ_SSL_SOCK_PROTO_TLS1_2 | PJ_SSL_SOCK_PROTO_TLS1_3, PJ_SSL_SOCK_PROTO_TLS1_3, 
+		    -1, -1,
+		    PJ_FALSE, PJ_FALSE);
+    if (ret != 0)
+	return ret;
+
+    PJ_LOG(3,("", "..echo test w/ incompatible proto: server TLSv1 vs client SSL3"));
     ret = echo_test(PJ_SSL_SOCK_PROTO_TLS1, PJ_SSL_SOCK_PROTO_SSL3, 
 		    PJ_TLS_RSA_WITH_DES_CBC_SHA, PJ_TLS_RSA_WITH_DES_CBC_SHA,
+		    PJ_FALSE, PJ_FALSE);
+    if (ret == 0)
+	return PJ_EBUG;
+
+    PJ_LOG(3,("", "..echo test w/ incompatible proto: server TLSv1.2 vs client TLSv1.3"));
+    ret = echo_test(PJ_SSL_SOCK_PROTO_TLS1_2, PJ_SSL_SOCK_PROTO_TLS1_3, 
+		    -1, -1,
 		    PJ_FALSE, PJ_FALSE);
     if (ret == 0)
 	return PJ_EBUG;
@@ -1538,10 +1559,12 @@ int ssl_sock_test(void)
     if (ret != 0)
 	return ret;
 
+#if WITH_BENCHMARK
     PJ_LOG(3,("", "..performance test"));
     ret = perf_test(PJ_IOQUEUE_MAX_HANDLES/2 - 1, 0);
     if (ret != 0)
 	return ret;
+#endif
 
     PJ_LOG(3,("", "..client non-SSL (handshake timeout 5 secs)"));
     ret = client_non_ssl(5000);

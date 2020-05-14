@@ -673,7 +673,19 @@ static pj_status_t create_loop_media_transport(
     opt.af = af;
     if (cfg->bound_addr.slen)
         opt.addr = cfg->bound_addr;
-    opt.port = cfg->port;
+
+    if (acc->next_rtp_port == 0 || cfg->port == 0)
+	acc->next_rtp_port = (pj_uint16_t)cfg->port;
+
+    if (cfg->port > 0 && cfg->port_range > 0 &&
+        (acc->next_rtp_port > cfg->port + cfg->port_range ||
+         acc->next_rtp_port < cfg->port))
+    {
+        acc->next_rtp_port = (pj_uint16_t)cfg->port;
+    }
+    opt.port = acc->next_rtp_port;
+    acc->next_rtp_port += 2;
+
     opt.disable_rx=!pjsua_var.acc[call_med->call->acc_id].cfg.enable_loopback;
     status = pjmedia_transport_loop_create2(pjsua_var.med_endpt, &opt,
     					    &call_med->tp);
@@ -2655,12 +2667,23 @@ pj_status_t pjsua_media_channel_create_sdp(pjsua_call_id call_id,
 	if (status != PJ_SUCCESS)
 	    goto on_error;
 
+	/* Add generated media to SDP session */
+	sdp->media[sdp->media_count++] = m;
+
+	/* Disable media if it has zero format/codec */
+	if (m->desc.fmt_count == 0) {
+	    m->desc.fmt[m->desc.fmt_count++] = pj_str("0");
+	    pjmedia_sdp_media_deactivate(pool, m);
+	    PJ_LOG(3,(THIS_FILE,
+		      "Call %d media %d: Disabled due to no active codec",
+		      call_id, mi));
+	    continue;
+	}
+
     	/* Add ssrc and cname attribute */
     	m->attr[m->attr_count++] = pjmedia_sdp_attr_create_ssrc(pool,
     								call_med->ssrc,
     								&call->cname);
-
-	sdp->media[sdp->media_count++] = m;
 
 	/* Give to transport */
 	status = pjmedia_transport_encode_sdp(call_med->tp, pool,

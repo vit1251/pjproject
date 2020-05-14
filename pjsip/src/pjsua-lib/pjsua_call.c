@@ -796,7 +796,7 @@ PJ_DEF(pj_status_t) pjsua_call_make_call(pjsua_acc_id acc_id,
     pj_status_t status;
 
     /* Check that account is valid */
-    PJ_ASSERT_RETURN(acc_id>=0 || acc_id<(int)PJ_ARRAY_SIZE(pjsua_var.acc),
+    PJ_ASSERT_RETURN(acc_id>=0 && acc_id<(int)PJ_ARRAY_SIZE(pjsua_var.acc),
 		     PJ_EINVAL);
 
     /* Check arguments */
@@ -1193,6 +1193,12 @@ pj_status_t create_temp_sdp(pj_pool_t *pool,
 		m->conn->addr_type = pj_str("IP6");
 		m->conn->addr = pj_str("::1");
 	    }
+	}
+
+	/* Disable media if it has zero format/codec */
+	if (m->desc.fmt_count == 0) {
+	    m->desc.fmt[m->desc.fmt_count++] = pj_str("0");
+	    pjmedia_sdp_media_deactivate(pool, m);
 	}
 
 	sdp->media[sdp->media_count++] = m;
