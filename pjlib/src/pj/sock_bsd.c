@@ -26,6 +26,10 @@
 #include <pj/errno.h>
 #include <pj/unicode.h>
 
+#ifdef PJ_LINUX
+#include <netinet/tcp.h>
+#endif
+
 #define THIS_FILE	"sock_bsd.c"
 
 /*
