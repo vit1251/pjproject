@@ -1,0 +1,666 @@
+# make[1]: Entering directory '/home/vsedyshev/Work/1111/pjproject/third_party/build'
+# for dir in  gsm ilbc speex g7221 srtp resample yuv webrtc; do \
+# 	if make  -C $dir all; then \
+# 	    true; \
+# 	else \
+# 	    exit 1; \
+# 	fi; \
+# done
+# make[2]: Entering directory '/home/vsedyshev/Work/1111/pjproject/third_party/build/gsm'
+# make -f /home/vsedyshev/Work/1111/pjproject/build/rules.mak APP=GSM_CODEC app=libgsmcodec ../../lib/libgsmcodec-x86_64-unknown-linux-gnu.a
+# make[3]: Entering directory '/home/vsedyshev/Work/1111/pjproject/third_party/build/gsm'
+# mkdir -p output/libgsmcodec-x86_64-unknown-linux-gnu/
+# gcc -c -DSASR -DWAV49 -DNeedFunctionPrototypes=1 -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../gsm/inc -I../../../pjlib/include \
+# 	-o output/libgsmcodec-x86_64-unknown-linux-gnu/add.o \
+# 	../../gsm/src/add.c 
+# gcc -c -DSASR -DWAV49 -DNeedFunctionPrototypes=1 -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../gsm/inc -I../../../pjlib/include \
+# 	-o output/libgsmcodec-x86_64-unknown-linux-gnu/code.o \
+# 	../../gsm/src/code.c 
+# gcc -c -DSASR -DWAV49 -DNeedFunctionPrototypes=1 -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../gsm/inc -I../../../pjlib/include \
+# 	-o output/libgsmcodec-x86_64-unknown-linux-gnu/decode.o \
+# 	../../gsm/src/decode.c 
+# gcc -c -DSASR -DWAV49 -DNeedFunctionPrototypes=1 -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../gsm/inc -I../../../pjlib/include \
+# 	-o output/libgsmcodec-x86_64-unknown-linux-gnu/gsm_create.o \
+# 	../../gsm/src/gsm_create.c 
+# gcc -c -DSASR -DWAV49 -DNeedFunctionPrototypes=1 -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../gsm/inc -I../../../pjlib/include \
+# 	-o output/libgsmcodec-x86_64-unknown-linux-gnu/gsm_decode.o \
+# 	../../gsm/src/gsm_decode.c 
+# gcc -c -DSASR -DWAV49 -DNeedFunctionPrototypes=1 -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../gsm/inc -I../../../pjlib/include \
+# 	-o output/libgsmcodec-x86_64-unknown-linux-gnu/gsm_destroy.o \
+# 	../../gsm/src/gsm_destroy.c 
+# gcc -c -DSASR -DWAV49 -DNeedFunctionPrototypes=1 -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../gsm/inc -I../../../pjlib/include \
+# 	-o output/libgsmcodec-x86_64-unknown-linux-gnu/gsm_encode.o \
+# 	../../gsm/src/gsm_encode.c 
+# gcc -c -DSASR -DWAV49 -DNeedFunctionPrototypes=1 -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../gsm/inc -I../../../pjlib/include \
+# 	-o output/libgsmcodec-x86_64-unknown-linux-gnu/gsm_explode.o \
+# 	../../gsm/src/gsm_explode.c 
+# gcc -c -DSASR -DWAV49 -DNeedFunctionPrototypes=1 -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../gsm/inc -I../../../pjlib/include \
+# 	-o output/libgsmcodec-x86_64-unknown-linux-gnu/gsm_implode.o \
+# 	../../gsm/src/gsm_implode.c 
+# gcc -c -DSASR -DWAV49 -DNeedFunctionPrototypes=1 -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../gsm/inc -I../../../pjlib/include \
+# 	-o output/libgsmcodec-x86_64-unknown-linux-gnu/gsm_option.o \
+# 	../../gsm/src/gsm_option.c 
+# gcc -c -DSASR -DWAV49 -DNeedFunctionPrototypes=1 -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../gsm/inc -I../../../pjlib/include \
+# 	-o output/libgsmcodec-x86_64-unknown-linux-gnu/long_term.o \
+# 	../../gsm/src/long_term.c 
+# gcc -c -DSASR -DWAV49 -DNeedFunctionPrototypes=1 -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../gsm/inc -I../../../pjlib/include \
+# 	-o output/libgsmcodec-x86_64-unknown-linux-gnu/lpc.o \
+# 	../../gsm/src/lpc.c 
+# gcc -c -DSASR -DWAV49 -DNeedFunctionPrototypes=1 -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../gsm/inc -I../../../pjlib/include \
+# 	-o output/libgsmcodec-x86_64-unknown-linux-gnu/preprocess.o \
+# 	../../gsm/src/preprocess.c 
+# gcc -c -DSASR -DWAV49 -DNeedFunctionPrototypes=1 -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../gsm/inc -I../../../pjlib/include \
+# 	-o output/libgsmcodec-x86_64-unknown-linux-gnu/rpe.o \
+# 	../../gsm/src/rpe.c 
+# gcc -c -DSASR -DWAV49 -DNeedFunctionPrototypes=1 -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../gsm/inc -I../../../pjlib/include \
+# 	-o output/libgsmcodec-x86_64-unknown-linux-gnu/short_term.o \
+# 	../../gsm/src/short_term.c 
+# gcc -c -DSASR -DWAV49 -DNeedFunctionPrototypes=1 -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../gsm/inc -I../../../pjlib/include \
+# 	-o output/libgsmcodec-x86_64-unknown-linux-gnu/table.o \
+# 	../../gsm/src/table.c 
+# if test ! -d ../../lib; then mkdir -p ../../lib; fi
+# ar rv ../../lib/libgsmcodec-x86_64-unknown-linux-gnu.a  output/libgsmcodec-x86_64-unknown-linux-gnu/add.o  output/libgsmcodec-x86_64-unknown-linux-gnu/code.o  output/libgsmcodec-x86_64-unknown-linux-gnu/decode.o  output/libgsmcodec-x86_64-unknown-linux-gnu/gsm_create.o  output/libgsmcodec-x86_64-unknown-linux-gnu/gsm_decode.o  output/libgsmcodec-x86_64-unknown-linux-gnu/gsm_destroy.o  output/libgsmcodec-x86_64-unknown-linux-gnu/gsm_encode.o  output/libgsmcodec-x86_64-unknown-linux-gnu/gsm_explode.o  output/libgsmcodec-x86_64-unknown-linux-gnu/gsm_implode.o  output/libgsmcodec-x86_64-unknown-linux-gnu/gsm_option.o  output/libgsmcodec-x86_64-unknown-linux-gnu/long_term.o  output/libgsmcodec-x86_64-unknown-linux-gnu/lpc.o  output/libgsmcodec-x86_64-unknown-linux-gnu/preprocess.o  output/libgsmcodec-x86_64-unknown-linux-gnu/rpe.o  output/libgsmcodec-x86_64-unknown-linux-gnu/short_term.o  output/libgsmcodec-x86_64-unknown-linux-gnu/table.o
+# r - output/libgsmcodec-x86_64-unknown-linux-gnu/add.o
+# r - output/libgsmcodec-x86_64-unknown-linux-gnu/code.o
+# r - output/libgsmcodec-x86_64-unknown-linux-gnu/decode.o
+# r - output/libgsmcodec-x86_64-unknown-linux-gnu/gsm_create.o
+# r - output/libgsmcodec-x86_64-unknown-linux-gnu/gsm_decode.o
+# r - output/libgsmcodec-x86_64-unknown-linux-gnu/gsm_destroy.o
+# r - output/libgsmcodec-x86_64-unknown-linux-gnu/gsm_encode.o
+# r - output/libgsmcodec-x86_64-unknown-linux-gnu/gsm_explode.o
+# r - output/libgsmcodec-x86_64-unknown-linux-gnu/gsm_implode.o
+# r - output/libgsmcodec-x86_64-unknown-linux-gnu/gsm_option.o
+# r - output/libgsmcodec-x86_64-unknown-linux-gnu/long_term.o
+# r - output/libgsmcodec-x86_64-unknown-linux-gnu/lpc.o
+# r - output/libgsmcodec-x86_64-unknown-linux-gnu/preprocess.o
+# r - output/libgsmcodec-x86_64-unknown-linux-gnu/rpe.o
+# r - output/libgsmcodec-x86_64-unknown-linux-gnu/short_term.o
+# r - output/libgsmcodec-x86_64-unknown-linux-gnu/table.o
+# ranlib ../../lib/libgsmcodec-x86_64-unknown-linux-gnu.a
+# make[3]: Leaving directory '/home/vsedyshev/Work/1111/pjproject/third_party/build/gsm'
+# make[2]: Leaving directory '/home/vsedyshev/Work/1111/pjproject/third_party/build/gsm'
+# make[2]: Entering directory '/home/vsedyshev/Work/1111/pjproject/third_party/build/ilbc'
+# make -f /home/vsedyshev/Work/1111/pjproject/build/rules.mak APP=ILBC app=libilbccodec ../../lib/libilbccodec-x86_64-unknown-linux-gnu.a
+# make[3]: Entering directory '/home/vsedyshev/Work/1111/pjproject/third_party/build/ilbc'
+# mkdir -p output/libilbccodec-x86_64-unknown-linux-gnu/
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../ilbc -I../../../pjlib/include \
+# 	-o output/libilbccodec-x86_64-unknown-linux-gnu/FrameClassify.o \
+# 	../../ilbc/FrameClassify.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../ilbc -I../../../pjlib/include \
+# 	-o output/libilbccodec-x86_64-unknown-linux-gnu/LPCdecode.o \
+# 	../../ilbc/LPCdecode.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../ilbc -I../../../pjlib/include \
+# 	-o output/libilbccodec-x86_64-unknown-linux-gnu/LPCencode.o \
+# 	../../ilbc/LPCencode.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../ilbc -I../../../pjlib/include \
+# 	-o output/libilbccodec-x86_64-unknown-linux-gnu/StateConstructW.o \
+# 	../../ilbc/StateConstructW.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../ilbc -I../../../pjlib/include \
+# 	-o output/libilbccodec-x86_64-unknown-linux-gnu/StateSearchW.o \
+# 	../../ilbc/StateSearchW.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../ilbc -I../../../pjlib/include \
+# 	-o output/libilbccodec-x86_64-unknown-linux-gnu/anaFilter.o \
+# 	../../ilbc/anaFilter.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../ilbc -I../../../pjlib/include \
+# 	-o output/libilbccodec-x86_64-unknown-linux-gnu/constants.o \
+# 	../../ilbc/constants.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../ilbc -I../../../pjlib/include \
+# 	-o output/libilbccodec-x86_64-unknown-linux-gnu/createCB.o \
+# 	../../ilbc/createCB.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../ilbc -I../../../pjlib/include \
+# 	-o output/libilbccodec-x86_64-unknown-linux-gnu/doCPLC.o \
+# 	../../ilbc/doCPLC.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../ilbc -I../../../pjlib/include \
+# 	-o output/libilbccodec-x86_64-unknown-linux-gnu/enhancer.o \
+# 	../../ilbc/enhancer.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../ilbc -I../../../pjlib/include \
+# 	-o output/libilbccodec-x86_64-unknown-linux-gnu/filter.o \
+# 	../../ilbc/filter.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../ilbc -I../../../pjlib/include \
+# 	-o output/libilbccodec-x86_64-unknown-linux-gnu/gainquant.o \
+# 	../../ilbc/gainquant.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../ilbc -I../../../pjlib/include \
+# 	-o output/libilbccodec-x86_64-unknown-linux-gnu/getCBvec.o \
+# 	../../ilbc/getCBvec.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../ilbc -I../../../pjlib/include \
+# 	-o output/libilbccodec-x86_64-unknown-linux-gnu/helpfun.o \
+# 	../../ilbc/helpfun.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../ilbc -I../../../pjlib/include \
+# 	-o output/libilbccodec-x86_64-unknown-linux-gnu/hpInput.o \
+# 	../../ilbc/hpInput.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../ilbc -I../../../pjlib/include \
+# 	-o output/libilbccodec-x86_64-unknown-linux-gnu/hpOutput.o \
+# 	../../ilbc/hpOutput.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../ilbc -I../../../pjlib/include \
+# 	-o output/libilbccodec-x86_64-unknown-linux-gnu/iCBConstruct.o \
+# 	../../ilbc/iCBConstruct.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../ilbc -I../../../pjlib/include \
+# 	-o output/libilbccodec-x86_64-unknown-linux-gnu/iCBSearch.o \
+# 	../../ilbc/iCBSearch.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../ilbc -I../../../pjlib/include \
+# 	-o output/libilbccodec-x86_64-unknown-linux-gnu/iLBC_decode.o \
+# 	../../ilbc/iLBC_decode.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../ilbc -I../../../pjlib/include \
+# 	-o output/libilbccodec-x86_64-unknown-linux-gnu/iLBC_encode.o \
+# 	../../ilbc/iLBC_encode.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../ilbc -I../../../pjlib/include \
+# 	-o output/libilbccodec-x86_64-unknown-linux-gnu/lsf.o \
+# 	../../ilbc/lsf.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../ilbc -I../../../pjlib/include \
+# 	-o output/libilbccodec-x86_64-unknown-linux-gnu/packing.o \
+# 	../../ilbc/packing.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../ilbc -I../../../pjlib/include \
+# 	-o output/libilbccodec-x86_64-unknown-linux-gnu/syntFilter.o \
+# 	../../ilbc/syntFilter.c 
+# if test ! -d ../../lib; then mkdir -p ../../lib; fi
+# ar rv ../../lib/libilbccodec-x86_64-unknown-linux-gnu.a  output/libilbccodec-x86_64-unknown-linux-gnu/FrameClassify.o  output/libilbccodec-x86_64-unknown-linux-gnu/LPCdecode.o  output/libilbccodec-x86_64-unknown-linux-gnu/LPCencode.o  output/libilbccodec-x86_64-unknown-linux-gnu/StateConstructW.o  output/libilbccodec-x86_64-unknown-linux-gnu/StateSearchW.o  output/libilbccodec-x86_64-unknown-linux-gnu/anaFilter.o  output/libilbccodec-x86_64-unknown-linux-gnu/constants.o  output/libilbccodec-x86_64-unknown-linux-gnu/createCB.o  output/libilbccodec-x86_64-unknown-linux-gnu/doCPLC.o  output/libilbccodec-x86_64-unknown-linux-gnu/enhancer.o  output/libilbccodec-x86_64-unknown-linux-gnu/filter.o  output/libilbccodec-x86_64-unknown-linux-gnu/gainquant.o  output/libilbccodec-x86_64-unknown-linux-gnu/getCBvec.o  output/libilbccodec-x86_64-unknown-linux-gnu/helpfun.o  output/libilbccodec-x86_64-unknown-linux-gnu/hpInput.o  output/libilbccodec-x86_64-unknown-linux-gnu/hpOutput.o  output/libilbccodec-x86_64-unknown-linux-gnu/iCBConstruct.o  output/libilbccodec-x86_64-unknown-linux-gnu/iCBSearch.o  output/libilbccodec-x86_64-unknown-linux-gnu/iLBC_decode.o  output/libilbccodec-x86_64-unknown-linux-gnu/iLBC_encode.o  output/libilbccodec-x86_64-unknown-linux-gnu/lsf.o  output/libilbccodec-x86_64-unknown-linux-gnu/packing.o  output/libilbccodec-x86_64-unknown-linux-gnu/syntFilter.o
+# r - output/libilbccodec-x86_64-unknown-linux-gnu/FrameClassify.o
+# r - output/libilbccodec-x86_64-unknown-linux-gnu/LPCdecode.o
+# r - output/libilbccodec-x86_64-unknown-linux-gnu/LPCencode.o
+# r - output/libilbccodec-x86_64-unknown-linux-gnu/StateConstructW.o
+# r - output/libilbccodec-x86_64-unknown-linux-gnu/StateSearchW.o
+# r - output/libilbccodec-x86_64-unknown-linux-gnu/anaFilter.o
+# r - output/libilbccodec-x86_64-unknown-linux-gnu/constants.o
+# r - output/libilbccodec-x86_64-unknown-linux-gnu/createCB.o
+# r - output/libilbccodec-x86_64-unknown-linux-gnu/doCPLC.o
+# r - output/libilbccodec-x86_64-unknown-linux-gnu/enhancer.o
+# r - output/libilbccodec-x86_64-unknown-linux-gnu/filter.o
+# r - output/libilbccodec-x86_64-unknown-linux-gnu/gainquant.o
+# r - output/libilbccodec-x86_64-unknown-linux-gnu/getCBvec.o
+# r - output/libilbccodec-x86_64-unknown-linux-gnu/helpfun.o
+# r - output/libilbccodec-x86_64-unknown-linux-gnu/hpInput.o
+# r - output/libilbccodec-x86_64-unknown-linux-gnu/hpOutput.o
+# r - output/libilbccodec-x86_64-unknown-linux-gnu/iCBConstruct.o
+# r - output/libilbccodec-x86_64-unknown-linux-gnu/iCBSearch.o
+# r - output/libilbccodec-x86_64-unknown-linux-gnu/iLBC_decode.o
+# r - output/libilbccodec-x86_64-unknown-linux-gnu/iLBC_encode.o
+# r - output/libilbccodec-x86_64-unknown-linux-gnu/lsf.o
+# r - output/libilbccodec-x86_64-unknown-linux-gnu/packing.o
+# r - output/libilbccodec-x86_64-unknown-linux-gnu/syntFilter.o
+# ranlib ../../lib/libilbccodec-x86_64-unknown-linux-gnu.a
+# make[3]: Leaving directory '/home/vsedyshev/Work/1111/pjproject/third_party/build/ilbc'
+# make[2]: Leaving directory '/home/vsedyshev/Work/1111/pjproject/third_party/build/ilbc'
+# make[2]: Entering directory '/home/vsedyshev/Work/1111/pjproject/third_party/build/g7221'
+# make -f /home/vsedyshev/Work/1111/pjproject/build/rules.mak APP=G7221_CODEC app=libg7221codec ../../lib/libg7221codec-x86_64-unknown-linux-gnu.a
+# make[3]: Entering directory '/home/vsedyshev/Work/1111/pjproject/third_party/build/g7221'
+# mkdir -p output/libg7221codec-x86_64-unknown-linux-gnu/common/
+# mkdir -p output/libg7221codec-x86_64-unknown-linux-gnu/decode/
+# mkdir -p output/libg7221codec-x86_64-unknown-linux-gnu/encode/
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I../.. -I../../g7221/common -I../../g7221/common/stl-files -I../../../pjlib/include \
+# 	-o output/libg7221codec-x86_64-unknown-linux-gnu/common/common.o \
+# 	../../g7221/common/common.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I../.. -I../../g7221/common -I../../g7221/common/stl-files -I../../../pjlib/include \
+# 	-o output/libg7221codec-x86_64-unknown-linux-gnu/common/huff_tab.o \
+# 	../../g7221/common/huff_tab.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I../.. -I../../g7221/common -I../../g7221/common/stl-files -I../../../pjlib/include \
+# 	-o output/libg7221codec-x86_64-unknown-linux-gnu/common/tables.o \
+# 	../../g7221/common/tables.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I../.. -I../../g7221/common -I../../g7221/common/stl-files -I../../../pjlib/include \
+# 	-o output/libg7221codec-x86_64-unknown-linux-gnu/common/basic_op.o \
+# 	../../g7221/common/basic_op.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I../.. -I../../g7221/common -I../../g7221/common/stl-files -I../../../pjlib/include \
+# 	-o output/libg7221codec-x86_64-unknown-linux-gnu/decode/coef2sam.o \
+# 	../../g7221/decode/coef2sam.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I../.. -I../../g7221/common -I../../g7221/common/stl-files -I../../../pjlib/include \
+# 	-o output/libg7221codec-x86_64-unknown-linux-gnu/decode/dct4_s.o \
+# 	../../g7221/decode/dct4_s.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I../.. -I../../g7221/common -I../../g7221/common/stl-files -I../../../pjlib/include \
+# 	-o output/libg7221codec-x86_64-unknown-linux-gnu/decode/decoder.o \
+# 	../../g7221/decode/decoder.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I../.. -I../../g7221/common -I../../g7221/common/stl-files -I../../../pjlib/include \
+# 	-o output/libg7221codec-x86_64-unknown-linux-gnu/encode/dct4_a.o \
+# 	../../g7221/encode/dct4_a.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I../.. -I../../g7221/common -I../../g7221/common/stl-files -I../../../pjlib/include \
+# 	-o output/libg7221codec-x86_64-unknown-linux-gnu/encode/sam2coef.o \
+# 	../../g7221/encode/sam2coef.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I../.. -I../../g7221/common -I../../g7221/common/stl-files -I../../../pjlib/include \
+# 	-o output/libg7221codec-x86_64-unknown-linux-gnu/encode/encoder.o \
+# 	../../g7221/encode/encoder.c 
+# if test ! -d ../../lib; then mkdir -p ../../lib; fi
+# ar rv ../../lib/libg7221codec-x86_64-unknown-linux-gnu.a  output/libg7221codec-x86_64-unknown-linux-gnu/common/common.o  output/libg7221codec-x86_64-unknown-linux-gnu/common/huff_tab.o  output/libg7221codec-x86_64-unknown-linux-gnu/common/tables.o  output/libg7221codec-x86_64-unknown-linux-gnu/common/basic_op.o  output/libg7221codec-x86_64-unknown-linux-gnu/decode/coef2sam.o  output/libg7221codec-x86_64-unknown-linux-gnu/decode/dct4_s.o  output/libg7221codec-x86_64-unknown-linux-gnu/decode/decoder.o  output/libg7221codec-x86_64-unknown-linux-gnu/encode/dct4_a.o  output/libg7221codec-x86_64-unknown-linux-gnu/encode/sam2coef.o  output/libg7221codec-x86_64-unknown-linux-gnu/encode/encoder.o
+# r - output/libg7221codec-x86_64-unknown-linux-gnu/common/common.o
+# r - output/libg7221codec-x86_64-unknown-linux-gnu/common/huff_tab.o
+# r - output/libg7221codec-x86_64-unknown-linux-gnu/common/tables.o
+# r - output/libg7221codec-x86_64-unknown-linux-gnu/common/basic_op.o
+# r - output/libg7221codec-x86_64-unknown-linux-gnu/decode/coef2sam.o
+# r - output/libg7221codec-x86_64-unknown-linux-gnu/decode/dct4_s.o
+# r - output/libg7221codec-x86_64-unknown-linux-gnu/decode/decoder.o
+# r - output/libg7221codec-x86_64-unknown-linux-gnu/encode/dct4_a.o
+# r - output/libg7221codec-x86_64-unknown-linux-gnu/encode/sam2coef.o
+# r - output/libg7221codec-x86_64-unknown-linux-gnu/encode/encoder.o
+# ranlib ../../lib/libg7221codec-x86_64-unknown-linux-gnu.a
+# make[3]: Leaving directory '/home/vsedyshev/Work/1111/pjproject/third_party/build/g7221'
+# make[2]: Leaving directory '/home/vsedyshev/Work/1111/pjproject/third_party/build/g7221'
+# make[2]: Entering directory '/home/vsedyshev/Work/1111/pjproject/third_party/build/srtp'
+# make -f /home/vsedyshev/Work/1111/pjproject/build/rules.mak APP=SRTP app=libsrtp ../../lib/libsrtp-x86_64-unknown-linux-gnu.a
+# make[3]: Entering directory '/home/vsedyshev/Work/1111/pjproject/third_party/build/srtp'
+# mkdir -p output/libsrtp-x86_64-unknown-linux-gnu/crypto/cipher/
+# mkdir -p output/libsrtp-x86_64-unknown-linux-gnu/crypto/hash/
+# mkdir -p output/libsrtp-x86_64-unknown-linux-gnu/crypto/kernel/
+# mkdir -p output/libsrtp-x86_64-unknown-linux-gnu/crypto/math/
+# mkdir -p output/libsrtp-x86_64-unknown-linux-gnu/crypto/replay/
+# mkdir -p output/libsrtp-x86_64-unknown-linux-gnu/pjlib/
+# mkdir -p output/libsrtp-x86_64-unknown-linux-gnu/srtp/
+# gcc -c -DHAVE_CONFIG_H -I. -I../../srtp/crypto/include -I../../srtp/include -I../../../pjlib/include -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1     -DOPENSSL \
+# 	-o output/libsrtp-x86_64-unknown-linux-gnu/crypto/cipher/cipher.o \
+# 	../../srtp/crypto/cipher/cipher.c 
+# gcc -c -DHAVE_CONFIG_H -I. -I../../srtp/crypto/include -I../../srtp/include -I../../../pjlib/include -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1     -DOPENSSL \
+# 	-o output/libsrtp-x86_64-unknown-linux-gnu/crypto/cipher/null_cipher.o \
+# 	../../srtp/crypto/cipher/null_cipher.c 
+# gcc -c -DHAVE_CONFIG_H -I. -I../../srtp/crypto/include -I../../srtp/include -I../../../pjlib/include -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1     -DOPENSSL \
+# 	-o output/libsrtp-x86_64-unknown-linux-gnu/crypto/cipher/aes_icm_ossl.o \
+# 	../../srtp/crypto/cipher/aes_icm_ossl.c 
+# gcc -c -DHAVE_CONFIG_H -I. -I../../srtp/crypto/include -I../../srtp/include -I../../../pjlib/include -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1     -DOPENSSL \
+# 	-o output/libsrtp-x86_64-unknown-linux-gnu/crypto/cipher/aes_gcm_ossl.o \
+# 	../../srtp/crypto/cipher/aes_gcm_ossl.c 
+# gcc -c -DHAVE_CONFIG_H -I. -I../../srtp/crypto/include -I../../srtp/include -I../../../pjlib/include -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1     -DOPENSSL \
+# 	-o output/libsrtp-x86_64-unknown-linux-gnu/crypto/hash/null_auth.o \
+# 	../../srtp/crypto/hash/null_auth.c 
+# gcc -c -DHAVE_CONFIG_H -I. -I../../srtp/crypto/include -I../../srtp/include -I../../../pjlib/include -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1     -DOPENSSL \
+# 	-o output/libsrtp-x86_64-unknown-linux-gnu/crypto/hash/auth.o \
+# 	../../srtp/crypto/hash/auth.c 
+# gcc -c -DHAVE_CONFIG_H -I. -I../../srtp/crypto/include -I../../srtp/include -I../../../pjlib/include -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1     -DOPENSSL \
+# 	-o output/libsrtp-x86_64-unknown-linux-gnu/crypto/hash/hmac_ossl.o \
+# 	../../srtp/crypto/hash/hmac_ossl.c 
+# gcc -c -DHAVE_CONFIG_H -I. -I../../srtp/crypto/include -I../../srtp/include -I../../../pjlib/include -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1     -DOPENSSL \
+# 	-o output/libsrtp-x86_64-unknown-linux-gnu/crypto/math/datatypes.o \
+# 	../../srtp/crypto/math/datatypes.c 
+# gcc -c -DHAVE_CONFIG_H -I. -I../../srtp/crypto/include -I../../srtp/include -I../../../pjlib/include -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1     -DOPENSSL \
+# 	-o output/libsrtp-x86_64-unknown-linux-gnu/crypto/math/stat.o \
+# 	../../srtp/crypto/math/stat.c 
+# gcc -c -DHAVE_CONFIG_H -I. -I../../srtp/crypto/include -I../../srtp/include -I../../../pjlib/include -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1     -DOPENSSL \
+# 	-o output/libsrtp-x86_64-unknown-linux-gnu/crypto/kernel/crypto_kernel.o \
+# 	../../srtp/crypto/kernel/crypto_kernel.c 
+# gcc -c -DHAVE_CONFIG_H -I. -I../../srtp/crypto/include -I../../srtp/include -I../../../pjlib/include -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1     -DOPENSSL \
+# 	-o output/libsrtp-x86_64-unknown-linux-gnu/crypto/kernel/alloc.o \
+# 	../../srtp/crypto/kernel/alloc.c 
+# gcc -c -DHAVE_CONFIG_H -I. -I../../srtp/crypto/include -I../../srtp/include -I../../../pjlib/include -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1     -DOPENSSL \
+# 	-o output/libsrtp-x86_64-unknown-linux-gnu/crypto/kernel/key.o \
+# 	../../srtp/crypto/kernel/key.c 
+# gcc -c -DHAVE_CONFIG_H -I. -I../../srtp/crypto/include -I../../srtp/include -I../../../pjlib/include -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1     -DOPENSSL \
+# 	-o output/libsrtp-x86_64-unknown-linux-gnu/pjlib/srtp_err.o \
+# 	../../srtp/pjlib/srtp_err.c 
+# gcc -c -DHAVE_CONFIG_H -I. -I../../srtp/crypto/include -I../../srtp/include -I../../../pjlib/include -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1     -DOPENSSL \
+# 	-o output/libsrtp-x86_64-unknown-linux-gnu/crypto/replay/rdb.o \
+# 	../../srtp/crypto/replay/rdb.c 
+# gcc -c -DHAVE_CONFIG_H -I. -I../../srtp/crypto/include -I../../srtp/include -I../../../pjlib/include -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1     -DOPENSSL \
+# 	-o output/libsrtp-x86_64-unknown-linux-gnu/crypto/replay/rdbx.o \
+# 	../../srtp/crypto/replay/rdbx.c 
+# gcc -c -DHAVE_CONFIG_H -I. -I../../srtp/crypto/include -I../../srtp/include -I../../../pjlib/include -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1     -DOPENSSL \
+# 	-o output/libsrtp-x86_64-unknown-linux-gnu/crypto/replay/ut_sim.o \
+# 	../../srtp/crypto/replay/ut_sim.c 
+# gcc -c -DHAVE_CONFIG_H -I. -I../../srtp/crypto/include -I../../srtp/include -I../../../pjlib/include -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1     -DOPENSSL \
+# 	-o output/libsrtp-x86_64-unknown-linux-gnu/srtp/srtp.o \
+# 	../../srtp/srtp/srtp.c 
+# gcc -c -DHAVE_CONFIG_H -I. -I../../srtp/crypto/include -I../../srtp/include -I../../../pjlib/include -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1     -DOPENSSL \
+# 	-o output/libsrtp-x86_64-unknown-linux-gnu/srtp/ekt.o \
+# 	../../srtp/srtp/ekt.c 
+# if test ! -d ../../lib; then mkdir -p ../../lib; fi
+# ar rv ../../lib/libsrtp-x86_64-unknown-linux-gnu.a  output/libsrtp-x86_64-unknown-linux-gnu/crypto/cipher/cipher.o  output/libsrtp-x86_64-unknown-linux-gnu/crypto/cipher/null_cipher.o  output/libsrtp-x86_64-unknown-linux-gnu/crypto/cipher/aes_icm_ossl.o  output/libsrtp-x86_64-unknown-linux-gnu/crypto/cipher/aes_gcm_ossl.o  output/libsrtp-x86_64-unknown-linux-gnu/crypto/hash/null_auth.o  output/libsrtp-x86_64-unknown-linux-gnu/crypto/hash/auth.o  output/libsrtp-x86_64-unknown-linux-gnu/crypto/hash/hmac_ossl.o  output/libsrtp-x86_64-unknown-linux-gnu/crypto/math/datatypes.o  output/libsrtp-x86_64-unknown-linux-gnu/crypto/math/stat.o  output/libsrtp-x86_64-unknown-linux-gnu/crypto/kernel/crypto_kernel.o  output/libsrtp-x86_64-unknown-linux-gnu/crypto/kernel/alloc.o  output/libsrtp-x86_64-unknown-linux-gnu/crypto/kernel/key.o  output/libsrtp-x86_64-unknown-linux-gnu/pjlib/srtp_err.o  output/libsrtp-x86_64-unknown-linux-gnu/crypto/replay/rdb.o  output/libsrtp-x86_64-unknown-linux-gnu/crypto/replay/rdbx.o  output/libsrtp-x86_64-unknown-linux-gnu/crypto/replay/ut_sim.o  output/libsrtp-x86_64-unknown-linux-gnu/srtp/srtp.o  output/libsrtp-x86_64-unknown-linux-gnu/srtp/ekt.o
+# r - output/libsrtp-x86_64-unknown-linux-gnu/crypto/cipher/cipher.o
+# r - output/libsrtp-x86_64-unknown-linux-gnu/crypto/cipher/null_cipher.o
+# r - output/libsrtp-x86_64-unknown-linux-gnu/crypto/cipher/aes_icm_ossl.o
+# r - output/libsrtp-x86_64-unknown-linux-gnu/crypto/cipher/aes_gcm_ossl.o
+# r - output/libsrtp-x86_64-unknown-linux-gnu/crypto/hash/null_auth.o
+# r - output/libsrtp-x86_64-unknown-linux-gnu/crypto/hash/auth.o
+# r - output/libsrtp-x86_64-unknown-linux-gnu/crypto/hash/hmac_ossl.o
+# r - output/libsrtp-x86_64-unknown-linux-gnu/crypto/math/datatypes.o
+# r - output/libsrtp-x86_64-unknown-linux-gnu/crypto/math/stat.o
+# r - output/libsrtp-x86_64-unknown-linux-gnu/crypto/kernel/crypto_kernel.o
+# r - output/libsrtp-x86_64-unknown-linux-gnu/crypto/kernel/alloc.o
+# r - output/libsrtp-x86_64-unknown-linux-gnu/crypto/kernel/key.o
+# r - output/libsrtp-x86_64-unknown-linux-gnu/pjlib/srtp_err.o
+# r - output/libsrtp-x86_64-unknown-linux-gnu/crypto/replay/rdb.o
+# r - output/libsrtp-x86_64-unknown-linux-gnu/crypto/replay/rdbx.o
+# r - output/libsrtp-x86_64-unknown-linux-gnu/crypto/replay/ut_sim.o
+# r - output/libsrtp-x86_64-unknown-linux-gnu/srtp/srtp.o
+# r - output/libsrtp-x86_64-unknown-linux-gnu/srtp/ekt.o
+# ranlib ../../lib/libsrtp-x86_64-unknown-linux-gnu.a
+# make[3]: Leaving directory '/home/vsedyshev/Work/1111/pjproject/third_party/build/srtp'
+# make[2]: Leaving directory '/home/vsedyshev/Work/1111/pjproject/third_party/build/srtp'
+# make[2]: Entering directory '/home/vsedyshev/Work/1111/pjproject/third_party/build/resample'
+# make -f /home/vsedyshev/Work/1111/pjproject/build/rules.mak APP=RESAMPLE app=libresample ../../lib/libresample-x86_64-unknown-linux-gnu.a
+# make[3]: Entering directory '/home/vsedyshev/Work/1111/pjproject/third_party/build/resample'
+# mkdir -p output/libresample-x86_64-unknown-linux-gnu/
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../resample/include -I../../../pjlib/include \
+# 	-o output/libresample-x86_64-unknown-linux-gnu/resamplesubs.o \
+# 	../../resample/src/resamplesubs.c 
+# if test ! -d ../../lib; then mkdir -p ../../lib; fi
+# ar rv ../../lib/libresample-x86_64-unknown-linux-gnu.a  output/libresample-x86_64-unknown-linux-gnu/resamplesubs.o
+# r - output/libresample-x86_64-unknown-linux-gnu/resamplesubs.o
+# ranlib ../../lib/libresample-x86_64-unknown-linux-gnu.a
+# make[3]: Leaving directory '/home/vsedyshev/Work/1111/pjproject/third_party/build/resample'
+# make[2]: Leaving directory '/home/vsedyshev/Work/1111/pjproject/third_party/build/resample'
+# make[2]: Entering directory '/home/vsedyshev/Work/1111/pjproject/third_party/build/yuv'
+# make -f /home/vsedyshev/Work/1111/pjproject/build/rules.mak APP=YUV app=libyuv ../../lib/libyuv-x86_64-unknown-linux-gnu.a
+# make[3]: Entering directory '/home/vsedyshev/Work/1111/pjproject/third_party/build/yuv'
+# mkdir -p output/libyuv-x86_64-unknown-linux-gnu/
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/compare.o \
+# 	../../yuv/source/compare.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/compare_common.o \
+# 	../../yuv/source/compare_common.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/compare_gcc.o \
+# 	../../yuv/source/compare_gcc.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/compare_neon64.o \
+# 	../../yuv/source/compare_neon64.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/compare_neon.o \
+# 	../../yuv/source/compare_neon.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/compare_win.o \
+# 	../../yuv/source/compare_win.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/convert_argb.o \
+# 	../../yuv/source/convert_argb.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/convert.o \
+# 	../../yuv/source/convert.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/convert_from_argb.o \
+# 	../../yuv/source/convert_from_argb.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/convert_from.o \
+# 	../../yuv/source/convert_from.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/convert_jpeg.o \
+# 	../../yuv/source/convert_jpeg.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/convert_to_argb.o \
+# 	../../yuv/source/convert_to_argb.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/convert_to_i420.o \
+# 	../../yuv/source/convert_to_i420.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/cpu_id.o \
+# 	../../yuv/source/cpu_id.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/mjpeg_decoder.o \
+# 	../../yuv/source/mjpeg_decoder.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/mjpeg_validate.o \
+# 	../../yuv/source/mjpeg_validate.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/planar_functions.o \
+# 	../../yuv/source/planar_functions.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/rotate_any.o \
+# 	../../yuv/source/rotate_any.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/rotate_argb.o \
+# 	../../yuv/source/rotate_argb.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/rotate.o \
+# 	../../yuv/source/rotate.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/rotate_common.o \
+# 	../../yuv/source/rotate_common.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/rotate_gcc.o \
+# 	../../yuv/source/rotate_gcc.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/rotate_dspr2.o \
+# 	../../yuv/source/rotate_dspr2.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/rotate_neon64.o \
+# 	../../yuv/source/rotate_neon64.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/rotate_neon.o \
+# 	../../yuv/source/rotate_neon.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/rotate_win.o \
+# 	../../yuv/source/rotate_win.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/row_any.o \
+# 	../../yuv/source/row_any.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/row_common.o \
+# 	../../yuv/source/row_common.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/row_gcc.o \
+# 	../../yuv/source/row_gcc.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/row_dspr2.o \
+# 	../../yuv/source/row_dspr2.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/row_neon64.o \
+# 	../../yuv/source/row_neon64.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/row_neon.o \
+# 	../../yuv/source/row_neon.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/row_win.o \
+# 	../../yuv/source/row_win.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/scale_any.o \
+# 	../../yuv/source/scale_any.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/scale_argb.o \
+# 	../../yuv/source/scale_argb.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/scale.o \
+# 	../../yuv/source/scale.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/scale_common.o \
+# 	../../yuv/source/scale_common.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/scale_gcc.o \
+# 	../../yuv/source/scale_gcc.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/scale_dspr2.o \
+# 	../../yuv/source/scale_dspr2.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/scale_neon64.o \
+# 	../../yuv/source/scale_neon64.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/scale_neon.o \
+# 	../../yuv/source/scale_neon.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/scale_win.o \
+# 	../../yuv/source/scale_win.cc
+# g++ -c -fomit-frame-pointer  -DPJ_AUTOCONF=1 -g -O2    -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../yuv/include -I../../../pjlib/include \
+# 	-o output/libyuv-x86_64-unknown-linux-gnu/video_common.o \
+# 	../../yuv/source/video_common.cc
+# if test ! -d ../../lib; then mkdir -p ../../lib; fi
+# ar rv ../../lib/libyuv-x86_64-unknown-linux-gnu.a  output/libyuv-x86_64-unknown-linux-gnu/compare.o  output/libyuv-x86_64-unknown-linux-gnu/compare_common.o  output/libyuv-x86_64-unknown-linux-gnu/compare_gcc.o  output/libyuv-x86_64-unknown-linux-gnu/compare_neon64.o  output/libyuv-x86_64-unknown-linux-gnu/compare_neon.o  output/libyuv-x86_64-unknown-linux-gnu/compare_win.o  output/libyuv-x86_64-unknown-linux-gnu/convert_argb.o  output/libyuv-x86_64-unknown-linux-gnu/convert.o  output/libyuv-x86_64-unknown-linux-gnu/convert_from_argb.o  output/libyuv-x86_64-unknown-linux-gnu/convert_from.o  output/libyuv-x86_64-unknown-linux-gnu/convert_jpeg.o  output/libyuv-x86_64-unknown-linux-gnu/convert_to_argb.o  output/libyuv-x86_64-unknown-linux-gnu/convert_to_i420.o  output/libyuv-x86_64-unknown-linux-gnu/cpu_id.o  output/libyuv-x86_64-unknown-linux-gnu/mjpeg_decoder.o  output/libyuv-x86_64-unknown-linux-gnu/mjpeg_validate.o  output/libyuv-x86_64-unknown-linux-gnu/planar_functions.o  output/libyuv-x86_64-unknown-linux-gnu/rotate_any.o  output/libyuv-x86_64-unknown-linux-gnu/rotate_argb.o  output/libyuv-x86_64-unknown-linux-gnu/rotate.o  output/libyuv-x86_64-unknown-linux-gnu/rotate_common.o  output/libyuv-x86_64-unknown-linux-gnu/rotate_gcc.o  output/libyuv-x86_64-unknown-linux-gnu/rotate_dspr2.o  output/libyuv-x86_64-unknown-linux-gnu/rotate_neon64.o  output/libyuv-x86_64-unknown-linux-gnu/rotate_neon.o  output/libyuv-x86_64-unknown-linux-gnu/rotate_win.o  output/libyuv-x86_64-unknown-linux-gnu/row_any.o  output/libyuv-x86_64-unknown-linux-gnu/row_common.o  output/libyuv-x86_64-unknown-linux-gnu/row_gcc.o  output/libyuv-x86_64-unknown-linux-gnu/row_dspr2.o  output/libyuv-x86_64-unknown-linux-gnu/row_neon64.o  output/libyuv-x86_64-unknown-linux-gnu/row_neon.o  output/libyuv-x86_64-unknown-linux-gnu/row_win.o  output/libyuv-x86_64-unknown-linux-gnu/scale_any.o  output/libyuv-x86_64-unknown-linux-gnu/scale_argb.o  output/libyuv-x86_64-unknown-linux-gnu/scale.o  output/libyuv-x86_64-unknown-linux-gnu/scale_common.o  output/libyuv-x86_64-unknown-linux-gnu/scale_gcc.o  output/libyuv-x86_64-unknown-linux-gnu/scale_dspr2.o  output/libyuv-x86_64-unknown-linux-gnu/scale_neon64.o  output/libyuv-x86_64-unknown-linux-gnu/scale_neon.o  output/libyuv-x86_64-unknown-linux-gnu/scale_win.o  output/libyuv-x86_64-unknown-linux-gnu/video_common.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/compare.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/compare_common.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/compare_gcc.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/compare_neon64.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/compare_neon.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/compare_win.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/convert_argb.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/convert.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/convert_from_argb.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/convert_from.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/convert_jpeg.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/convert_to_argb.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/convert_to_i420.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/cpu_id.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/mjpeg_decoder.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/mjpeg_validate.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/planar_functions.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/rotate_any.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/rotate_argb.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/rotate.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/rotate_common.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/rotate_gcc.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/rotate_dspr2.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/rotate_neon64.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/rotate_neon.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/rotate_win.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/row_any.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/row_common.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/row_gcc.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/row_dspr2.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/row_neon64.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/row_neon.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/row_win.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/scale_any.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/scale_argb.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/scale.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/scale_common.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/scale_gcc.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/scale_dspr2.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/scale_neon64.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/scale_neon.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/scale_win.o
+# r - output/libyuv-x86_64-unknown-linux-gnu/video_common.o
+# ranlib ../../lib/libyuv-x86_64-unknown-linux-gnu.a
+# make[3]: Leaving directory '/home/vsedyshev/Work/1111/pjproject/third_party/build/yuv'
+# make[2]: Leaving directory '/home/vsedyshev/Work/1111/pjproject/third_party/build/yuv'
+# make[2]: Entering directory '/home/vsedyshev/Work/1111/pjproject/third_party/build/webrtc'
+# make -f /home/vsedyshev/Work/1111/pjproject/build/rules.mak APP=WEBRTC app=libwebrtc ../../lib/libwebrtc-x86_64-unknown-linux-gnu.a
+# make[3]: Entering directory '/home/vsedyshev/Work/1111/pjproject/third_party/build/webrtc'
+# mkdir -p output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/
+# mkdir -p output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/
+# mkdir -p output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/aec/
+# mkdir -p output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/aecm/
+# mkdir -p output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/ns/
+# mkdir -p output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/utility/
+# mkdir -p output/libwebrtc-x86_64-unknown-linux-gnu/system_wrappers/source/
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../webrtc/src -I../../../pjlib/include -fexceptions -DWEBRTC_POSIX=1  \
+# 	-o output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/aec/aec_core.o \
+# 	../../webrtc/src/webrtc//modules/audio_processing/aec/aec_core.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../webrtc/src -I../../../pjlib/include -fexceptions -DWEBRTC_POSIX=1  \
+# 	-o output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/aec/aec_rdft.o \
+# 	../../webrtc/src/webrtc//modules/audio_processing/aec/aec_rdft.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../webrtc/src -I../../../pjlib/include -fexceptions -DWEBRTC_POSIX=1  \
+# 	-o output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/aec/aec_resampler.o \
+# 	../../webrtc/src/webrtc//modules/audio_processing/aec/aec_resampler.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../webrtc/src -I../../../pjlib/include -fexceptions -DWEBRTC_POSIX=1  \
+# 	-o output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/aec/echo_cancellation.o \
+# 	../../webrtc/src/webrtc//modules/audio_processing/aec/echo_cancellation.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../webrtc/src -I../../../pjlib/include -fexceptions -DWEBRTC_POSIX=1  \
+# 	-o output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/aecm/aecm_core.o \
+# 	../../webrtc/src/webrtc//modules/audio_processing/aecm/aecm_core.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../webrtc/src -I../../../pjlib/include -fexceptions -DWEBRTC_POSIX=1  \
+# 	-o output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/aecm/echo_control_mobile.o \
+# 	../../webrtc/src/webrtc//modules/audio_processing/aecm/echo_control_mobile.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../webrtc/src -I../../../pjlib/include -fexceptions -DWEBRTC_POSIX=1  \
+# 	-o output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/ns/noise_suppression.o \
+# 	../../webrtc/src/webrtc//modules/audio_processing/ns/noise_suppression.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../webrtc/src -I../../../pjlib/include -fexceptions -DWEBRTC_POSIX=1  \
+# 	-o output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/ns/noise_suppression_x.o \
+# 	../../webrtc/src/webrtc//modules/audio_processing/ns/noise_suppression_x.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../webrtc/src -I../../../pjlib/include -fexceptions -DWEBRTC_POSIX=1  \
+# 	-o output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/ns/ns_core.o \
+# 	../../webrtc/src/webrtc//modules/audio_processing/ns/ns_core.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../webrtc/src -I../../../pjlib/include -fexceptions -DWEBRTC_POSIX=1  \
+# 	-o output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/ns/nsx_core.o \
+# 	../../webrtc/src/webrtc//modules/audio_processing/ns/nsx_core.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../webrtc/src -I../../../pjlib/include -fexceptions -DWEBRTC_POSIX=1  \
+# 	-o output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/utility/delay_estimator_wrapper.o \
+# 	../../webrtc/src/webrtc//modules/audio_processing/utility/delay_estimator_wrapper.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../webrtc/src -I../../../pjlib/include -fexceptions -DWEBRTC_POSIX=1  \
+# 	-o output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/utility/delay_estimator.o \
+# 	../../webrtc/src/webrtc//modules/audio_processing/utility/delay_estimator.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../webrtc/src -I../../../pjlib/include -fexceptions -DWEBRTC_POSIX=1  \
+# 	-o output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/fft4g.o \
+# 	../../webrtc/src/webrtc//common_audio/fft4g.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../webrtc/src -I../../../pjlib/include -fexceptions -DWEBRTC_POSIX=1  \
+# 	-o output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/ring_buffer.o \
+# 	../../webrtc/src/webrtc//common_audio/ring_buffer.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../webrtc/src -I../../../pjlib/include -fexceptions -DWEBRTC_POSIX=1  \
+# 	-o output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/complex_bit_reverse.o \
+# 	../../webrtc/src/webrtc//common_audio/signal_processing/complex_bit_reverse.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../webrtc/src -I../../../pjlib/include -fexceptions -DWEBRTC_POSIX=1  \
+# 	-o output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/complex_fft.o \
+# 	../../webrtc/src/webrtc//common_audio/signal_processing/complex_fft.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../webrtc/src -I../../../pjlib/include -fexceptions -DWEBRTC_POSIX=1  \
+# 	-o output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/copy_set_operations.o \
+# 	../../webrtc/src/webrtc//common_audio/signal_processing/copy_set_operations.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../webrtc/src -I../../../pjlib/include -fexceptions -DWEBRTC_POSIX=1  \
+# 	-o output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/cross_correlation.o \
+# 	../../webrtc/src/webrtc//common_audio/signal_processing/cross_correlation.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../webrtc/src -I../../../pjlib/include -fexceptions -DWEBRTC_POSIX=1  \
+# 	-o output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/division_operations.o \
+# 	../../webrtc/src/webrtc//common_audio/signal_processing/division_operations.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../webrtc/src -I../../../pjlib/include -fexceptions -DWEBRTC_POSIX=1  \
+# 	-o output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/downsample_fast.o \
+# 	../../webrtc/src/webrtc//common_audio/signal_processing/downsample_fast.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../webrtc/src -I../../../pjlib/include -fexceptions -DWEBRTC_POSIX=1  \
+# 	-o output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/energy.o \
+# 	../../webrtc/src/webrtc//common_audio/signal_processing/energy.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../webrtc/src -I../../../pjlib/include -fexceptions -DWEBRTC_POSIX=1  \
+# 	-o output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/get_scaling_square.o \
+# 	../../webrtc/src/webrtc//common_audio/signal_processing/get_scaling_square.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../webrtc/src -I../../../pjlib/include -fexceptions -DWEBRTC_POSIX=1  \
+# 	-o output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/min_max_operations.o \
+# 	../../webrtc/src/webrtc//common_audio/signal_processing/min_max_operations.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../webrtc/src -I../../../pjlib/include -fexceptions -DWEBRTC_POSIX=1  \
+# 	-o output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/randomization_functions.o \
+# 	../../webrtc/src/webrtc//common_audio/signal_processing/randomization_functions.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../webrtc/src -I../../../pjlib/include -fexceptions -DWEBRTC_POSIX=1  \
+# 	-o output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/real_fft.o \
+# 	../../webrtc/src/webrtc//common_audio/signal_processing/real_fft.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../webrtc/src -I../../../pjlib/include -fexceptions -DWEBRTC_POSIX=1  \
+# 	-o output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/spl_init.o \
+# 	../../webrtc/src/webrtc//common_audio/signal_processing/spl_init.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../webrtc/src -I../../../pjlib/include -fexceptions -DWEBRTC_POSIX=1  \
+# 	-o output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/spl_sqrt.o \
+# 	../../webrtc/src/webrtc//common_audio/signal_processing/spl_sqrt.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../webrtc/src -I../../../pjlib/include -fexceptions -DWEBRTC_POSIX=1  \
+# 	-o output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/spl_sqrt_floor.o \
+# 	../../webrtc/src/webrtc//common_audio/signal_processing/spl_sqrt_floor.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../webrtc/src -I../../../pjlib/include -fexceptions -DWEBRTC_POSIX=1  \
+# 	-o output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/vector_scaling_operations.o \
+# 	../../webrtc/src/webrtc//common_audio/signal_processing/vector_scaling_operations.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../webrtc/src -I../../../pjlib/include -fexceptions -DWEBRTC_POSIX=1  \
+# 	-o output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/aec/aec_core_sse2.o \
+# 	../../webrtc/src/webrtc//modules/audio_processing/aec/aec_core_sse2.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../webrtc/src -I../../../pjlib/include -fexceptions -DWEBRTC_POSIX=1  \
+# 	-o output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/aec/aec_rdft_sse2.o \
+# 	../../webrtc/src/webrtc//modules/audio_processing/aec/aec_rdft_sse2.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../webrtc/src -I../../../pjlib/include -fexceptions -DWEBRTC_POSIX=1  \
+# 	-o output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/aecm/aecm_core_c.o \
+# 	../../webrtc/src/webrtc//modules/audio_processing/aecm/aecm_core_c.c 
+# gcc -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../webrtc/src -I../../../pjlib/include -fexceptions -DWEBRTC_POSIX=1  \
+# 	-o output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/ns/nsx_core_c.o \
+# 	../../webrtc/src/webrtc//modules/audio_processing/ns/nsx_core_c.c 
+# g++ -c -Wall -DPJ_AUTOCONF=1 -O2 -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1    -I. -I../../webrtc/src -I../../../pjlib/include -fexceptions -DWEBRTC_POSIX=1  \
+# 	-o output/libwebrtc-x86_64-unknown-linux-gnu/system_wrappers/source/cpu_features.o \
+# 	../../webrtc/src/webrtc//system_wrappers/source/cpu_features.cc
+# if test ! -d ../../lib; then mkdir -p ../../lib; fi
+# ar rv ../../lib/libwebrtc-x86_64-unknown-linux-gnu.a  output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/aec/aec_core.o  output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/aec/aec_rdft.o  output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/aec/aec_resampler.o  output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/aec/echo_cancellation.o  output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/aecm/aecm_core.o  output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/aecm/echo_control_mobile.o  output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/ns/noise_suppression.o  output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/ns/noise_suppression_x.o  output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/ns/ns_core.o  output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/ns/nsx_core.o  output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/utility/delay_estimator_wrapper.o  output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/utility/delay_estimator.o  output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/fft4g.o  output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/ring_buffer.o  output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/complex_bit_reverse.o  output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/complex_fft.o  output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/copy_set_operations.o  output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/cross_correlation.o  output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/division_operations.o  output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/downsample_fast.o  output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/energy.o  output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/get_scaling_square.o  output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/min_max_operations.o  output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/randomization_functions.o  output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/real_fft.o  output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/spl_init.o  output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/spl_sqrt.o  output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/spl_sqrt_floor.o  output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/vector_scaling_operations.o  output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/aec/aec_core_sse2.o  output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/aec/aec_rdft_sse2.o  output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/aecm/aecm_core_c.o  output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/ns/nsx_core_c.o  output/libwebrtc-x86_64-unknown-linux-gnu/system_wrappers/source/cpu_features.o
+# r - output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/aec/aec_core.o
+# r - output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/aec/aec_rdft.o
+# r - output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/aec/aec_resampler.o
+# r - output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/aec/echo_cancellation.o
+# r - output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/aecm/aecm_core.o
+# r - output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/aecm/echo_control_mobile.o
+# r - output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/ns/noise_suppression.o
+# r - output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/ns/noise_suppression_x.o
+# r - output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/ns/ns_core.o
+# r - output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/ns/nsx_core.o
+# r - output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/utility/delay_estimator_wrapper.o
+# r - output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/utility/delay_estimator.o
+# r - output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/fft4g.o
+# r - output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/ring_buffer.o
+# r - output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/complex_bit_reverse.o
+# r - output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/complex_fft.o
+# r - output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/copy_set_operations.o
+# r - output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/cross_correlation.o
+# r - output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/division_operations.o
+# r - output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/downsample_fast.o
+# r - output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/energy.o
+# r - output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/get_scaling_square.o
+# r - output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/min_max_operations.o
+# r - output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/randomization_functions.o
+# r - output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/real_fft.o
+# r - output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/spl_init.o
+# r - output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/spl_sqrt.o
+# r - output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/spl_sqrt_floor.o
+# r - output/libwebrtc-x86_64-unknown-linux-gnu/common_audio/signal_processing/vector_scaling_operations.o
+# r - output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/aec/aec_core_sse2.o
+# r - output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/aec/aec_rdft_sse2.o
+# r - output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/aecm/aecm_core_c.o
+# r - output/libwebrtc-x86_64-unknown-linux-gnu/modules/audio_processing/ns/nsx_core_c.o
+# r - output/libwebrtc-x86_64-unknown-linux-gnu/system_wrappers/source/cpu_features.o
+# ranlib ../../lib/libwebrtc-x86_64-unknown-linux-gnu.a
+# make[3]: Leaving directory '/home/vsedyshev/Work/1111/pjproject/third_party/build/webrtc'
+# make[2]: Leaving directory '/home/vsedyshev/Work/1111/pjproject/third_party/build/webrtc'
+# make[1]: Leaving directory '/home/vsedyshev/Work/1111/pjproject/third_party/build'
