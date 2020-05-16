@@ -18,3 +18,7 @@ def build(c):
     """ Source code compile routine
     """
     c.run('ninja -C builddir', echo=True, pty=True)
+
+@task(pre=[automake])
+def check(c):
+    c.run('ninja -C builddir test', echo=True, pty=True)
